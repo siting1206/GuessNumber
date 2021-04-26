@@ -38,8 +38,9 @@ class GameWonFragment : Fragment() {
             view.findNavController().navigate(R.id.action_gameWonFragment_to_gameFragment)
         }
 
-        val args = GameWonFragmentArgs.fromBundle(requireArguments())
-        Toast.makeText(context, "NumCorrect: ${args.numCorrect}, NumQuestions: ${args.numQuestion}", Toast.LENGTH_LONG).show()
+        //val time = arguments?.getString("args")
+        val time = arguments?.getString("guess")
+        Toast.makeText(context, "You guess guess " + time + " times", Toast.LENGTH_LONG).show()
 
         return binding.root
     }
