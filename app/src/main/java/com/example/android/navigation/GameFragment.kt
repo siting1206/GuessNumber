@@ -43,19 +43,15 @@ class GameFragment : Fragment() {
 
         binding.submitButton.setOnClickListener {
             if(time>9) {
-                view?.findNavController()?.navigate(R.id.action_gameFragment_to_gameOverFragment)
+                view?.findNavController()?.navigate(GameFragmentDirections.actionGameFragmentToGameOverFragment(correct))
             }
             else{
                 time = time+1
                 if((binding.guess.text.toString()?.toInt()) == correct){
-                    view?.findNavController()?.navigate(R.id.action_gameFragment_to_gameWonFragment)
-                    val fragment = GameWonFragment()
-                    val bundle = Bundle()
-                    bundle.putString("guess", time.toString())
-                    fragment.setArguments(bundle)
+                    view?.findNavController()?.navigate(GameFragmentDirections.actionGameFragmentToGameWonFragment(time))
                 }
                 else if(time==10){
-                    view?.findNavController()?.navigate(R.id.action_gameFragment_to_gameOverFragment)
+                    view?.findNavController()?.navigate(GameFragmentDirections.actionGameFragmentToGameOverFragment(correct))
                 }
                 else{
                     compare(it)

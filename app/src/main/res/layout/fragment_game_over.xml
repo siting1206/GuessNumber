@@ -52,7 +52,7 @@
             android:paddingEnd="@dimen/button_padding"
             android:text="@string/try_again"
             android:textColor="?colorAccent"
-            android:textSize="@dimen/button_text_size"
+            android:textSize="36sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

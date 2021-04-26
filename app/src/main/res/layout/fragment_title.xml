@@ -11,11 +11,23 @@
         android:layout_height="match_parent">
 
 
+        <ImageView
+            android:id="@+id/welcome"
+            android:layout_width="254dp"
+            android:layout_height="324dp"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/welcome"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="TODO" />
+
         <Button
             android:id="@+id/playButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/horizontal_margin"
+            android:layout_marginTop="45dp"
             android:layout_marginEnd="@dimen/horizontal_margin"
             android:background="#FFC107"
             android:paddingStart="@dimen/button_padding"
@@ -24,10 +36,9 @@
             android:textColor="@color/orange"
             android:textSize="@dimen/button_text_size"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/welcome" />
 
 
 

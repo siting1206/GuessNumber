@@ -33,7 +33,7 @@
             android:paddingEnd="@dimen/button_padding"
             android:text="Play Again"
             android:textColor="@color/youWinDark"
-            android:textSize="@dimen/button_text_size"
+            android:textSize="36sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
